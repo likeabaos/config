@@ -25,10 +25,6 @@
         "editor.tabSize": 2,
         "editor.formatOnSave": true,
     },
-    "[jinja-html]": {
-        "editor.tabSize": 2,
-        "editor.formatOnSave": true,
-    },
     
     // OS DEPENDENCE
     // Terminal uses Cmder
@@ -53,6 +49,13 @@
         "**/.vscode": true,
         "**/.pyenv": true,
     },
+
+    // Jinja2 templates
+    "files.associations": {
+        "*.j2": "html",
+        "*.html.j2": "html"
+    },
+
     // OS DEPENDENCE
     // Default python path
     "python.pythonPath": "${env.USERPROFILE}\\Apps\\python\\venv\\3_7",
@@ -68,24 +71,5 @@
     // *********************************************
     // Depending on non-essential 3rd party ext.
     // *********************************************
-    "workbench.iconTheme": "vscode-icons",
-    "auto-close-tag.activationOnLanguage": [
-        "xml",
-        "php",
-        "blade",
-        "ejs",
-        "jinja",
-        "jinja-html",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "plaintext",
-        "markdown",
-        "vue",
-        "liquid",
-        "erb",
-        "lang-cfml",
-        "cfml",
-    ],
+
 }
