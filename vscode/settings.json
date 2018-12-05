@@ -48,6 +48,9 @@
         "**/.DS_Store": true,
         "**/.vscode": true,
         "**/.pyenv": true,
+        "**/*.db": true,
+        "**/__pycache__": true,
+        "**/migrations": true,
     },
 
     // Jinja2 templates
@@ -71,5 +74,5 @@
     // *********************************************
     // Depending on non-essential 3rd party ext.
     // *********************************************
-
+    "workbench.iconTheme": "vscode-icons",
 }
