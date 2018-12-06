@@ -8,6 +8,7 @@
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
     "window.restoreWindows": "none",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.openPositioning": "last",
 
     // Tab size per file type
     "[python]": {
