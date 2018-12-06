@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\[\033[01;36m\]\u\[\033[m\]@\[\033[01;32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -71,6 +71,9 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -113,5 +116,6 @@ if ! shopt -oq posix; then
 fi
 
 #####
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home"
 alias py='python3'
 alias pip='pip3'
