@@ -64,6 +64,11 @@
     // OS DEPENDENCE
     // Default python path
     "python.pythonPath": "${env.USERPROFILE}\\Apps\\python\\venv\\3_7",
+    
+    // Help with linting in flask project
+    "python.linting.pylintArgs": [
+        "--generated-members=Column,Table,Integer,String,DateTime,relationship,backref,ForeignKey,add,commit,rollback,setLevel,error,debug,info",
+        "--disable=C0111,C0103,C0413"],
 
 
     // *********************************************
