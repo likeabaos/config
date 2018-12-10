@@ -1,0 +1,72 @@
+{
+    // *********************************************
+    // General Settings for all file types
+    // *********************************************
+    // Workbench/Editor preferences
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "window.restoreWindows": "none",
+    "workbench.statusBar.feedback.visible": false,
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.openPositioning": "last",
+
+    // Tab size per file type
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.rulers": [88],
+    },
+    "[java]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+    },
+
+
+    // *********************************************
+    // Python Settings
+    // *********************************************
+    // Exclude default vscode and python virtual env
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.vscode": true,
+        "**/.pyenv": true,
+        "**/*.db": true,
+        "**/*.sqlite*": true,
+        "**/__pycache__": true,
+        "**/migrations": true,
+    },
+
+    // Jinja2 templates
+    "files.associations": {
+        "*.j2": "html",
+        "*.html.j2": "html"
+    },
+
+    // Default python path
+    "python.pythonPath": "${workspaceFolder}/.pyenv",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--ignore=E501"],
+    "editor.formatOnType": true,
+    "python.formatting.provider": "black",
+
+
+    // *********************************************
+    // Depending on non-essential 3rd party ext.
+    // *********************************************
+    "workbench.iconTheme": "vscode-icons",
+
+}
