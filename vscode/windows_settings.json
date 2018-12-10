@@ -3,7 +3,6 @@
     // General Settings for all file types
     // *********************************************
     // Workbench/Editor preferences
-    "workbench.colorTheme": "Atom One Dark",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
     "window.restoreWindows": "none",
@@ -82,4 +81,5 @@
     // Depending on non-essential 3rd party ext.
     // *********************************************
     "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Atom One Dark",
 }
