@@ -50,6 +50,7 @@
         "**/.vscode": true,
         "**/.pyenv": true,
         "**/*.db": true,
+        "**/*.sqlite*": true,
         "**/__pycache__": true,
         "**/migrations": true,
     },
