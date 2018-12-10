@@ -12,7 +12,7 @@
     // Tab size per file type
     "[python]": {
         "editor.tabSize": 4,
-        "editor.rulers": [80],
+        "editor.rulers": [88],
     },
     "[java]": {
         "editor.tabSize": 4,
